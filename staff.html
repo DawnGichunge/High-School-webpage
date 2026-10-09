@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>High School - Staff</title>
+    <style>
+        
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #0429fa;
+    background-image: url('Staff.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header {
+    background: linear-gradient(135deg, #1a365d, #2b6cb0);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+nav {
+    background-color: #2c5282;
+    padding: 0.8rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #4299e1;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.hero {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    color: #1a365d;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #4299e1;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+
+section {
+    background: white;
+    padding: 1.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1.8rem;
+}
+
+section h2 {
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+section h3 {
+    color: #2b6cb0;
+    margin: 1.2rem 0 0.6rem;
+}
+
+
+ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #cbd5e0;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #2b6cb0;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #edf2f7;
+}
+
+tr:hover {
+    background-color: #e2e8f0;
+}
+
+
+footer {
+    background-color: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    </style>
+</head>
+<body> 
+
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="staff.html">Staff</a> | 
+        <a href="student.html">Students</a> | 
+        <a href="register.html">Register</a>
+    </nav>
+
+    <h1>Our Dedicated Faculty & Staff</h1>
+    
+    <p>Our faculty consists of highly qualified educators, administrators, and support staff who are passionate about student success. Every teacher at Excellence High School works tirelessly to provide individualized attention and modern instruction to ensure no student is left behind.</p>
+
+    <div class="hero">
+            <h2>Our Dedicated Staff</h2>
+            <p>
+                At Horizon High School, our teachers and staff form the heart of the learning 
+                community. With years of experience, advanced degrees, and a genuine passion for 
+                education, they guide students toward academic success and personal growth every day.
+            </p>
+            <p>
+                From classroom instruction to counseling, athletics, and administration, our team 
+                works together to create a supportive and challenging environment where every 
+                student can thrive.
+            </p>
+        </div>
+
+        <section>
+            <h2>Leadership Team</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Department / Focus</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. Elena Vargas</td>
+                        <td>Principal</td>
+                        <td>Administration</td>
+                        <td>e.vargas@horizonhs.edu</td>
+                    </tr>
+                    <tr>
+                        <td>Mr. James Okonkwo</td>
+                        <td>Vice Principal</td>
+                        <td>Student Affairs</td>
+                        <td>j.okonkwo@horizonhs.edu</td>
+                    </tr>
+                    <tr>
+                        <td>Ms. Priya Sharma</td>
+                        <td>Dean of Academics</td>
+                        <td>Curriculum &amp; Instruction</td>
+                        <td>p.sharma@horizonhs.edu</td>
+                    </tr>
+                    <tr>
+                        <td>Mr. David Chen</td>
+                        <td>Athletic Director</td>
+                        <td>Sports &amp; Wellness</td>
+                        <td>d.chen@horizonhs.edu</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Departments</h2>
+            <h3>Academic Departments</h3>
+            <ul>
+                <li>English Language Arts</li>
+                <li>Mathematics</li>
+                <li>Science (Biology, Chemistry, Physics)</li>
+                <li>Social Studies &amp; History</li>
+                <li>World Languages (Spanish, French, Mandarin)</li>
+                <li>Fine Arts (Music, Visual Arts, Theater)</li>
+                <li>Physical Education &amp; Health</li>
+                <li>Technology &amp; Computer Science</li>
+            </ul>
+
+            <h3>Support Staff</h3>
+            <ul>
+                <li>School Counselors</li>
+                <li>Special Education Specialists</li>
+                <li>Library &amp; Media Specialists</li>
+                <li>Administrative Assistants</li>
+                <li>Campus Security &amp; Facilities</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Staff Highlights</h2>
+            <ol>
+                <li>Over 65% of teachers hold a master’s degree or higher</li>
+                <li>Average teaching experience: 12 years</li>
+                <li>National Board Certified Teachers on staff</li>
+                <li>Ongoing professional development every semester</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Horizon High School. All rights reserved.</p>
+        <p>Westlands | Nairobi City | Phone: (254) 715-572435</p>
+    </footer>
+</body>
+</html>

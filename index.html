@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+    
+    <style>
+    
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('horizon.school.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+header {
+    background: linear-gradient(rgba(26, 54, 93, 0.75), rgba(43, 108, 176, 0.75));
+    color: white;
+    padding: 2rem 0;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 200px;         
+    height: 100px;
+}
+
+        header  text h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        header text  p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+       
+        nav {
+            background-color: #2c5282;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.4rem;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: #4299e1;
+        }
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .hero {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .hero h2 {
+            color: #1a365d;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #4299e1;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .hero p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        
+        section {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 1.8rem;
+        }
+
+        section h2 {
+            color: #1a365d;
+            margin-bottom: 1rem;
+        }
+
+        section h3 {
+            color: #2b6cb0;
+            margin: 1.2rem 0 0.6rem;
+        }
+
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e0;
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2b6cb0;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #edf2f7;
+        }
+
+        tr:hover {
+            background-color: #e2e8f0;
+        }
+
+    
+        form {
+            max-width: 500px;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+            color: #2d3748;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+        }
+
+        button,
+        .btn {
+            background-color: #2b6cb0;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.8rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover,
+        .btn:hover {
+            background-color: #1a365d;
+        }
+
+        
+        footer {
+            background-color: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            opacity: 0.85;
+        }
+
+        
+        .highlight {
+            background-color: #ebf8ff;
+            padding: 1rem;
+            border-left: 4px solid #4299e1;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header-content">
+        <img src="Horizon logo.png" alt="School Logo" class="logo">
+        <div class="header-text">
+            <h1>Horizon High School</h1>
+            <p>Where Futures Begin</p>
+        </div>
+    </div>
+</header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="student.html">Students</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <h2>Welcome to Horizon High School</h2>
+            <p>
+                Horizon High School is a vibrant learning community dedicated to academic excellence, 
+                personal growth, and preparing students for success in college and beyond. Located in 
+                a supportive environment, we serve students in grades 9–12 with a rigorous curriculum, 
+                dedicated teachers, and a wide range of extracurricular opportunities.
+            </p>
+            <p>
+                Our mission is to inspire curiosity, build character, and empower every student to 
+                reach their full potential. Whether you are a prospective student, parent, or current 
+                member of our community, we invite you to explore all that Horizon has to offer.
+            </p>
+        </div>
+
+        <section>
+            <h2>Why Choose Horizon?</h2>
+            <ul>
+                <li>Strong college preparatory program with Advanced Placement (AP) courses</li>
+                <li>Award-winning arts, athletics, and STEM clubs</li>
+                <li>Small class sizes and personalized student support</li>
+                <li>Safe, inclusive campus with modern facilities</li>
+                <li>Active parent and community partnerships</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quick Facts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Founded</td>
+                        <td>1987</td>
+                    </tr>
+                    <tr>
+                        <td>Grades</td>
+                        <td>9 – 12</td>
+                    </tr>
+                    <tr>
+                        <td>Enrollment</td>
+                        <td>Approximately 1,250 students</td>
+                    </tr>
+                    <tr>
+                        <td>Student-Teacher Ratio</td>
+                        <td>16:1</td>
+                    </tr>
+                    <tr>
+                        <td>Mascot</td>
+                        <td>The Horizon Hawks</td>
+                    </tr>
+                    <tr>
+                        <td>Colors</td>
+                        <td>Navy Blue &amp; Gold</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Upcoming Events</h2>
+            <ol>
+                <li>Open House – October 15, 2026</li>
+                <li>Fall Sports Festival – October 22, 2026</li>
+                <li>Parent-Teacher Conferences – November 5–6, 2026</li>
+                <li>Winter Concert – December 12, 2026</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Horizon High School. All rights reserved.</p>
+        <p>Westlands | Nairobi City | Phone: (254) 715-572435</p>
+    </footer>
+</body>
+</html>
